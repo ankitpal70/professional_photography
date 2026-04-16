@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Photography</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="70" tabindex="0">
+
+  <div class="alert alert-dark alert-dismissible fade show text-center mb-0 rounded-0" role="alert">
+    <strong>Welcome!</strong> Explore my photography portfolio built fully with Bootstrap.
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+  </div>
+
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">My Photography</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#pricing">Pricing</a></li>
+              <li><a class="dropdown-item" href="#features">Features</a></li>
+              <li><a class="dropdown-item" href="#reviews">Reviews</a></li>
+              <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="py-5 bg-dark bg-gradient text-white">
+  <div class="container py-5">
+    <nav aria-label="breadcrumb" class="mb-4">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item">
+          <a href="#home" class="text-decoration-none text-info">Home</a>
+        </li>
+        <li class="breadcrumb-item active text-light" aria-current="page">Photography Portfolio</li>
+      </ol>
+    </nav>
+
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 text-center text-lg-start">
+        <h1 class="display-3 fw-bold">Welcome to My Photography</h1>
+        <p class="lead text-white-emphasis">
+          Capturing moments that last forever through wedding, portrait, nature and event photography.
+        </p>
+
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+          <a href="#gallery" class="btn btn-light btn-lg fw-semibold">View Gallery</a>
+          <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#bookingModal">
+            Book Now
+          </button>
+        </div>
+
+        <div class="mt-4 d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+          <span class="badge bg-secondary">Responsive Design</span>
+          <span class="badge bg-success">Bootstrap Grid</span>
+          <span class="badge bg-primary">Modern Layout</span>
+          <span class="badge bg-warning text-dark">No Custom CSS</span>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div id="heroCarousel" class="carousel slide shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="wedding1.JPG" class="d-block w-100 img-fluid" alt="Wedding Photography">
+            </div>
+            <div class="carousel-item">
+              <img src="nature1.jpg" class="d-block w-100 img-fluid" alt="Nature Photography">
+            </div>
+            <div class="carousel-item">
+              <img src="potrait.jpg" class="d-block w-100 img-fluid" alt="Portrait Photography">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <i class="bi bi-calendar-check fs-1 text-primary me-2"></i>
+            <div class="text-start">
+              <h3 class="mb-0 fw-bold">5+</h3>
+              <small class="text-muted">Years Experience</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <i class="bi bi-camera fs-1 text-success me-2"></i>
+            <div class="text-start">
+              <h3 class="mb-0 fw-bold">500+</h3>
+              <small class="text-muted">Photo Shoots</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <i class="bi bi-people fs-1 text-warning me-2"></i>
+            <div class="text-start">
+              <h3 class="mb-0 fw-bold">300+</h3>
+              <small class="text-muted">Happy Clients</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <i class="bi bi-award fs-1 text-danger me-2"></i>
+            <div class="text-start">
+              <h3 class="mb-0 fw-bold">15+</h3>
+              <small class="text-muted">Awards Won</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img src="Camera_man.JPG" class="img-fluid w-50 rounded shadow" alt="About Photography">
+        </div>
+
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">About Me</h2>
+          <p class="text-secondary">
+            I am a professional photographer specializing in wedding, portrait and nature photography.
+            My goal is to capture beautiful and timeless moments that you can cherish forever.
+          </p>
+          <p class="text-secondary">
+            With years of experience in photography, I focus on creativity, lighting and storytelling through my camera.
+          </p>
+
+          <div class="row text-center g-3 mt-2">
+            <div class="col-6 col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="fw-bold mb-0 text-warning">5+</h4> 
+
+                  <small class="text-muted">Years</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="fw-bold mb-0 text-danger">200+</h4>
+                  <small class="text-muted">Shoots</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="fw-bold mb-0 text-primary">150+</h4>
+                  <small class="text-muted">Clients</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="fw-bold mb-0">24/7</h4>
+                  <small class="text-muted">Support</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-secondary mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#aboutMore">
+            Read More
+          </button>
+
+          <div class="collapse mt-3" id="aboutMore">        
+            <div class="card card-body">
+              I work with high-quality equipment and creative ideas to turn every shot into a memorable story.
+              My mission is to provide professional service with artistic excellence.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="bg-light py-5">
+  <div class="container py-4">
+
+    <div class="text-center mb-5">
+      <span class="badge bg-primary mb-3">Why Choose Us</span>
+      <h2 class="fw-bold display-5">Our Special Features</h2>
+      <p class="text-secondary lead">What makes us different from others</p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 text-center shadow-sm border-0 rounded-4">
+          <div class="card-body p-4">
+            <div class="bg-primary bg-opacity-10 rounded-circle d-flex justify-content-center align-items-center mx-auto mb-3" style="width:80px;height:80px;">
+              <i class="bi bi-camera-video fs-1 text-primary"></i>
+            </div>
+            <h5 class="fw-bold">4K Video Coverage</h5>
+            <p class="text-secondary">Crystal clear video recording for your special events.</p>
+            <span class="badge bg-primary">HD Quality</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 text-center shadow-sm border-0 rounded-4">
+          <div class="card-body p-4">
+            <div class="bg-success bg-opacity-10 rounded-circle d-flex justify-content-center align-items-center mx-auto mb-3" style="width:80px;height:80px;">
+              <i class="bi bi-lightning-charge fs-1 text-success"></i>
+            </div>
+            <h5 class="fw-bold">Fast Delivery</h5>
+            <p class="text-secondary">Get photos within 3-7 days.</p>
+            <span class="badge bg-success">Quick Turnaround</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 text-center shadow-sm border-0 rounded-4">
+          <div class="card-body p-4">
+            <div class="bg-warning bg-opacity-10 rounded-circle d-flex justify-content-center align-items-center mx-auto mb-3" style="width:80px;height:80px;">
+              <i class="bi bi-palette fs-1 text-warning"></i>
+            </div>
+            <h5 class="fw-bold">Creative Editing</h5>
+            <p class="text-secondary">Professional editing & color grading.</p>
+            <span class="badge bg-warning text-dark">Artistic</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 text-center shadow-sm border-0 rounded-4">
+          <div class="card-body p-4">
+            <div class="bg-info bg-opacity-10 rounded-circle d-flex justify-content-center align-items-center mx-auto mb-3" style="width:80px;height:80px;">
+              <i class="bi bi-cloud-arrow-up fs-1 text-info"></i>
+            </div>
+            <h5 class="fw-bold">Cloud Storage</h5>
+            <p class="text-secondary">Secure cloud access & sharing.</p>
+            <span class="badge bg-info text-dark">Secure</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 text-center shadow-sm border-0 rounded-4">
+          <div class="card-body p-4">
+            <div class="bg-danger bg-opacity-10 rounded-circle d-flex justify-content-center align-items-center mx-auto mb-3" style="width:80px;height:80px;">
+              <i class="bi bi-heart fs-1 text-danger"></i>
+            </div>
+            <h5 class="fw-bold">100% Satisfaction</h5>
+            <p class="text-secondary">We work until you're satisfied.</p>
+            <span class="badge bg-danger">Guaranteed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 text-center shadow-sm border-0 rounded-4">
+          <div class="card-body p-4">
+            <div class="bg-secondary bg-opacity-10 rounded-circle d-flex justify-content-center align-items-center mx-auto mb-3" style="width:80px;height:80px;">
+              <i class="bi bi-headset fs-1 text-secondary"></i>
+            </div>
+            <h5 class="fw-bold">24/7 Support</h5>
+            <p class="text-secondary">Support anytime you need.</p>
+            <span class="badge bg-secondary">Always On</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="gallery" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-3">Portfolio</span>
+        <h2 class="fw-bold display-5">Our Photo Gallery</h2>
+        <p class="text-secondary lead">Browse through our best work</p>
+      </div>
+
+      <ul class="nav nav-pills justify-content-center mb-4" id="galleryTab" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active rounded-pill px-4" data-bs-toggle="tab" data-bs-target="#allPhotos" type="button">
+            <i class="bi bi-grid me-1"></i>All
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link rounded-pill px-4" data-bs-toggle="tab" data-bs-target="#weddingPhotos" type="button">
+            <i class="bi bi-heart me-1"></i>Wedding
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link rounded-pill px-4" data-bs-toggle="tab" data-bs-target="#naturePhotos" type="button">
+            <i class="bi bi-tree me-1"></i>Nature
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link rounded-pill px-4" data-bs-toggle="tab" data-bs-target="#portraitPhotos" type="button">
+            <i class="bi bi-person me-1"></i>Portrait
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="allPhotos">
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+                
+                <img src="Camera_man.JPG" class="d-block w-100 img-fluid" alt="Wedding Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">Camera Man</h6>
+                  <small class="text-muted"><i class="bi bi-heart-fill text-danger me-1"></i>245 likes</small>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-sm-6 col-lg-4">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="wedding3.JPG" class="d-block w-100 img-fluid" alt="Wedding Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">Wedding Photos</h6>
+                  <small class="text-muted"><i class="bi bi-heart-fill text-danger me-1"></i>189 likes</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="Rendom.jpg" class="d-block w-100 img-fluid" alt="Wedding Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">Random Photo</h6>
+                  <small class="text-muted"><i class="bi bi-heart-fill text-danger me-1"></i>312 likes</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="DSC_0724.JPG" class="d-block w-100 img-fluid" alt="Wedding Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">City Scape</h6>
+                  <small class="text-muted"><i class="bi bi-heart-fill text-danger me-1"></i>278 likes</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="lake.jpg" class="d-block w-100 img-fluid" alt="Lake Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">Lake Photography</h6>
+                  <small class="text-muted"><i class="bi bi-heart-fill text-danger me-1"></i>156 likes</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="DSC_0917.JPG" class="d-block w-100 img-fluid" alt="Wedding Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title mb-0">Professional Headshot</h6>
+                  <small class="text-muted"><i class="bi bi-heart-fill text-danger me-1"></i>423 likes</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="weddingPhotos">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+                <img src="wedding1.JPG" class="d-block w-100 img-fluid" alt="Wedding Photography">
+                
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="wedding1.JPG" class="d-block w-100 img-fluid" alt="Wedding Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="wedding1.JPG" class="d-block w-100 img-fluid" alt="Wedding Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="naturePhotos">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="DSC_0917.JPG" class="d-block w-100 img-fluid" alt="Nature Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="view.JPG" class="d-block w-100 img-fluid" alt="Wedding Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="portraitPhotos">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-5">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="potrait.jpg" class="d-block w-100 img-fluid" alt="Portrait Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="card border-0 shadow-sm gallery-item position-relative overflow-hidden rounded-4">
+
+                <img src="lake.jpg" class="d-block w-100 img-fluid" alt="Lake Photography">
+
+                <div class="gallery-overlay">
+                  <button class="btn btn-light rounded-circle" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link rounded-start-pill"><i class="bi bi-chevron-left"></i></a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link rounded-end-pill" href="#"><i class="bi bi-chevron-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+-----------------------
+<section id="services" class="bg-light py-5">
+  <div class="container py-4">
+
+    <div class="text-center mb-5">
+      <span class="badge bg-primary mb-3">What We Offer</span>
+      <h2 class="fw-bold display-5">Our Photography Services</h2>
+      <p class="text-secondary lead">Professional services tailored to your needs</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+          <div class="position-relative">
+            <img src="family1.JPG" class="d-block w-100 img-fluid" alt="Family Photography">
+            <span class="position-absolute top-0 end-0 m-3 badge bg-danger">Popular</span>
+          </div>
+          <div class="card-body text-center p-4">
+            <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px;">
+              <i class="bi bi-heart-fill fs-3 text-danger"></i>
+            </div>
+            <h5 class="fw-bold">Family Photography</h5>
+            <p class="text-secondary">Capture the moments that matter most.</p>
+            <ul class="list-unstyled text-start mb-3">
+              <li><i class="bi bi-check2 text-success me-2"></i>Full Day Coverage</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>500+ Photos</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Album</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 p-4 pt-0">
+            <button class="btn btn-danger w-100 rounded-pill">
+              <i class="bi bi-calendar-check me-2"></i>Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+          <div class="position-relative">
+            <img src="view.JPG" class="d-block w-100 img-fluid" alt="">
+            <span class="position-absolute top-0 end-0 m-3 badge bg-success">New</span>
+          </div>
+          <div class="card-body text-center p-4">
+            <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px;">
+              <i class="bi bi-calendar-event fs-3 text-success"></i>
+            </div>
+            <h5 class="fw-bold">View Photography</h5>
+            <p class="text-secondary">Professional coverage for events.</p>
+            <ul class="list-unstyled text-start mb-3">
+              <li><i class="bi bi-check2 text-success me-2"></i>Multi-camera</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Preview</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Fast Delivery</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 p-4 pt-0">
+            <button class="btn btn-outline-success w-100 rounded-pill">
+              <i class="bi bi-eye me-2"></i>View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+          <div class="position-relative">
+            <img src="potrait.jpg" class="d-block w-100 img-fluid" alt="">
+            <span class="position-absolute top-0 end-0 m-3 badge bg-primary">Pro</span>
+          </div>
+          <div class="card-body text-center p-4">
+            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:60px;height:60px;">
+              <i class="bi bi-person-fill fs-3 text-primary"></i>
+            </div>
+            <h5 class="fw-bold">Portrait Photography</h5>
+            <p class="text-secondary">Creative portrait sessions.</p>
+            <ul class="list-unstyled text-start mb-3">
+              <li><i class="bi bi-check2 text-success me-2"></i>Studio</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Lighting</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Retouching</li>
+            </ul>
+          </div>
+          <div class="card-footer bg-white border-0 p-4 pt-0">
+            <button class="btn btn-primary w-100 rounded-pill">Book</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="text-center mt-5">
+      <button class="btn btn-outline-primary rounded-pill px-5" data-bs-toggle="collapse" data-bs-target="#moreServices">
+        <i class="bi bi-plus-circle me-2"></i>View More
+      </button>
+    </div>
+
+    <!-- COLLAPSE FIXED -->
+    <div class="collapse mt-4" id="moreServices">
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex align-items-center">
+              <div class="bg-info bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-4" style="width:70px;height:70px;">
+                <i class="bi bi-building fs-2 text-info"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Corporate Photography</h5>
+                <p class="text-secondary mb-0">Office photography</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body d-flex align-items-center">
+              <div class="bg-warning bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-4" style="width:70px;height:70px;">
+                <i class="bi bi-baby fs-2 text-warning"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Baby & Maternity</h5>
+                <p class="text-secondary mb-0">Special moments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+ <!-- Pricing Section -->
+  <section id="pricing" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-3">Pricing Plans</span>
+        <h2 class="fw-bold display-5">Choose Your Package</h2>
+        <p class="text-secondary lead">Affordable pricing for every budget</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 rounded-4">
+            <div class="card-body text-center p-4">
+              <span class="badge bg-secondary mb-3">Basic</span>
+              <h3 class="display-4 fw-bold text-primary">₹5,000</h3>
+              <p class="text-muted">Perfect for small events</p>
+              <hr>
+              <ul class="list-unstyled text-start">
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>50 Photos</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>3 Days Delivery</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Basic Editing</li>
+                <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i>Photo Album</li>
+                <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i>Video Coverage</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white border-0 p-4 pt-0">
+              <button class="btn btn-outline-primary w-100 rounded-pill">Select Plan</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow border-0 rounded-4 position-relative" style="border: 2px solid #0d6efd !important;">
+            <span class="position-absolute top-0 start-50 translate-middle badge bg-primary px-4 py-2">Most Popular</span>
+            <div class="card-body text-center p-4">
+              <span class="badge bg-primary mb-3">Standard</span>
+              <h3 class="display-4 fw-bold text-primary">₹10,000</h3>
+              <p class="text-muted">Best for weddings</p>
+              <hr>
+              <ul class="list-unstyled text-start">
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>120 Photos</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>5 Days Delivery</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Premium Editing</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Photo Album</li>
+                <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i>Video Coverage</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white border-0 p-4 pt-0">
+              <button class="btn btn-primary w-100 rounded-pill">Select Plan</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 rounded-4">
+            <div class="card-body text-center p-4">
+              <span class="badge bg-warning mb-3">Premium</span>
+              <h3 class="display-4 fw-bold text-primary">₹18,000</h3>
+              <p class="text-muted">Complete package</p>
+              <hr>
+              <ul class="list-unstyled text-start">
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>250 Photos</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>7 Days Delivery</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Advanced Editing</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Premium Album</li>
+                <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>4K Video</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white border-0 p-4 pt-0">
+              <button class="btn btn-outline-primary w-100 rounded-pill">Select Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>Feature</th>
+                <th class="text-center">Basic</th>
+                <th class="text-center">Standard</th>
+                <th class="text-center">Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="bi bi-camera me-2"></i>Number of Photos</td>
+                <td class="text-center">50</td>
+                <td class="text-center">120</td>
+                <td class="text-center">250</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-clock me-2"></i>Delivery Time</td>
+                <td class="text-center">3 Days</td>
+                <td class="text-center">5 Days</td>
+                <td class="text-center">7 Days</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-palette me-2"></i>Photo Editing</td>
+                <td class="text-center"><i class="bi bi-check text-success"></i></td>
+                <td class="text-center"><i class="bi bi-check text-success"></i></td>
+                <td class="text-center"><i class="bi bi-check text-success"></i></td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-book me-2"></i>Photo Album</td>
+                <td class="text-center"><i class="bi bi-x text-danger"></i></td>
+                <td class="text-center"><i class="bi bi-check text-success"></i></td>
+                <td class="text-center"><i class="bi bi-check text-success"></i></td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-camera-video me-2"></i>Video Coverage</td>
+                <td class="text-center"><i class="bi bi-x text-danger"></i></td>
+                <td class="text-center"><i class="bi bi-x text-danger"></i></td>
+                <td class="text-center"><i class="bi bi-check text-success"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Client Reviews</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <p class="lead">"Amazing photography service! Every picture looked perfect."</p>
+              <h6 class="mb-0">- Happy Client</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <p class="lead">"Professional work, on-time delivery and very creative shots."</p>
+              <h6 class="mb-0">- Event Client</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body">
+              <p class="lead">"The portrait session was comfortable and the output was beautiful."</p>
+              <h6 class="mb-0">- Portrait Client</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">FAQ</h2>
+
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Do you travel for shoots?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, I am available for local and outstation photography shoots.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              How many edited photos will I get?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              It depends on the package you choose. Basic, Standard and Premium packages are available.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+              How can I contact you?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can use the contact form below to send your message directly.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form class="card shadow-sm">
+            <div class="card-body">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Your Name</label>
+                  <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Service Type</label>
+                  <select class="form-select">
+                    <option selected>Select Service</option>
+                    <option>Wedding Photography</option>
+                    <option>Event Photography</option>
+                    <option>Portrait Photography</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Event Date</label>
+                  <input type="date" class="form-control">
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+                </div>
+
+                <div class="col-12 d-flex flex-column flex-sm-row gap-3">
+                  <button class="btn btn-dark">Send Message</button>
+                  <button type="reset" class="btn btn-outline-secondary">Reset</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5 class="mb-1">My Photography</h5>
+          <p class="mb-0 text-light">Built with Bootstrap 5 only</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">© 2026 My Photography | All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="bookingModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title">Book a Photoshoot</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Thank you for your interest in my photography services. Please use the contact form to book your session.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#contact" class="btn btn-dark" data-bs-dismiss="modal">Go to Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
